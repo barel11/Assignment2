@@ -8,7 +8,7 @@ public class Main {
 		
         StockFollowers tamiTan = new StockFollowers("Tami Tan", stockServer);
         StockFollowers timSaroli = new StockFollowers("Tim Saroli", stockServer);
-        StockFollowers simaDides = new StockFollowers("Sima Dides", stockServer); // תיקנתי כאן ל-Dides שיהיה כמו בשאלה
+        StockFollowers simaDides = new StockFollowers("Sima Dides", stockServer); 
         
         StockUpdateThread updater = new StockUpdateThread(stockServer);
         
