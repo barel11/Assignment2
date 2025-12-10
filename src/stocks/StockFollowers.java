@@ -32,4 +32,4 @@ public class StockFollowers implements Runnable {
 			}
 		}
 	}
-}//tret
+}
