@@ -22,4 +22,4 @@ public class Main {
         simaThread.start();
         updaterThread.start();
 	}
-}
+}dd
