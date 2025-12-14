@@ -18,7 +18,6 @@ public class Racer implements Runnable {
 		this.id = globalId;
 		globalId++;
 	}
-
 	public void go() {
 		Thread.currentThread().setPriority(this.speed);
 		for (int i = 1; i < 100; i++) {
