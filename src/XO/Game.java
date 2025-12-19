@@ -6,6 +6,9 @@ public abstract class Game {
 		X, O
 	}
 
+	private char[][] gameBoard = new char[5][5];
+	private int count = 0;
+	
 	public Game() {
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
@@ -13,9 +16,6 @@ public abstract class Game {
 			}
 		}
 	}
-
-	private char[][] gameBoard = new char[5][5];
-	private int count = 0;
 
 	public void printBoard() {
 		for (int i = 0; i < 5; i++) {
@@ -27,12 +27,16 @@ public abstract class Game {
 	}
 
 	public Player getTurn() {
-		count++;
-		if (count % 2 == 0) {
-			return Player.X;
-		}
-		return Player.O;
+	    Player turn;
+	    if (count % 2 == 0) {
+	        turn = Player.X;
+	    } else {
+	        turn = Player.O;
+	    }
+	    count++;
+	    return turn;
 	}
+
 
 	public Cells[] getFreeCells() {
 		int count = 0;
