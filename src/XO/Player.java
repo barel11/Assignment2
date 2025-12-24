@@ -8,6 +8,6 @@ public abstract class Player extends Thread {
         this.game = game;
         this.type = type;
     }
-
+    @Override
     public abstract void run();
 }
